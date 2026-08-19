@@ -3,34 +3,55 @@
 Cinco notebooks para as demonstrações da palestra 06, mais um de preparação.
 Todos gerados por `tools/gerar_colabs.py` (edite o gerador, não o `.ipynb`).
 
-## Links ativos (Google Drive do Vinicius) — atualizados em 19/08
+## De onde os botões abrem: **GitHub**
 
-Configurados em `EVENTO.demos` e testados: cada botão do deck abre o notebook
-certo. Verificados por hash contra os arquivos locais — não foi confiado na
-ordem em que os links chegaram.
+Os cinco botões da palestra apontam para o repositório público:
 
-| # | notebook | abrir no Colab |
-|---|---|---|
-| 00 | preparar o Drive | [1ZKQPTVIqj…](https://colab.research.google.com/drive/1ZKQPTVIqjknKrdVrUlu3n52P232tc6Zg) |
-| 01 | detecção e contagem | [1whU_HIBtP…](https://colab.research.google.com/drive/1whU_HIBtPY6qYg9qbkJ4IfHqXrBT1831) |
-| 02 | segmentação + instâncias ao vivo | [1gcQBDYdHG…](https://colab.research.google.com/drive/1gcQBDYdHG3ThnIznQjtFReQz6dYSACwc) |
-| 03 | pose + polichinelo ao vivo | [1P3rOJCEGu…](https://colab.research.google.com/drive/1P3rOJCEGuQUS3PlP53ElCesgtwfPRpF7) |
-| 04 | estoque + contador ao vivo | [1C149jsJMd…](https://colab.research.google.com/drive/1C149jsJMd7-B3OMIMPBf2PAmEvAb_aWn) |
-| 05 | treino ao vivo (EPI) | [1csstfsrOd…](https://colab.research.google.com/drive/1csstfsrOd4FE18AhoyLW3xui3NoPd52-) |
-| 06 | dataset → sistema rodando | [1aiCw15xWe…](https://colab.research.google.com/drive/1aiCw15xWeDM7giyKxagJ6TdSXH0Fnj06) |
+**<https://github.com/viniciusmaurente/demos-ia-ultralytics>**
 
-Para trocar qualquer um depois (ou apontar para o GitHub):
+### Por que GitHub e não Drive
 
-```bash
-python tools/configurar_demos.py --listar
-python tools/configurar_demos.py --drive 01=<id>,03=<id>
-python tools/configurar_demos.py --github usuario/repositorio
-python tools/rebuild_inline_data.py 06     # SEMPRE depois
+O link aponta para o arquivo **na fonte**, não para uma cópia. Quando o
+notebook é atualizado aqui e vai para o GitHub, **o botão já abre a versão
+nova** — sem você subir nada, sem id mudar, sem link quebrar.
+
+Pela rota do Drive isso quebrou três vezes: cada vez que a pasta era apagada e
+reenviada, os ids mudavam e os cinco botões morriam juntos.
+
+**Os pesos treinados continuam indo para o seu Drive**, em qualquer uma das
+rotas — quem salva são as próprias células (`shutil.copy` para
+`/content/drive/...`), não o lugar de onde o notebook abriu.
+
+### O preço: um clique a mais
+
+Notebook aberto do GitHub faz o Colab avisar que ele *"não foi criado pelo
+Google"* e pedir **"Executar mesmo assim"** na primeira execução. É um clique,
+uma vez por sessão. **Faça isso no ensaio** para não descobrir no palco.
+
+### Plano B — os mesmos notebooks no seu Drive
+
+Se o GitHub falhar no dia, estes ids abrem as cópias do seu Drive:
+
+```
+00 setup        1EmdkYDB5a_p59lL3rq8ejXL6BJi3xEj3
+01 deteccao     1Q-4322NzLuvuiOaUr8Ka9vTi38d7mmPE
+02 segmentacao  1zkSGcdXup8gjs4FinugpFj2Xb-uvEaQZ
+03 pose         1qetoB1xjAIiwt3Uu46H3IqWRD_jQWhDR
+04 garrafas     1Ozg-aR2dJpaLM71RwWNFDFv7N7RVe5CV
+05 epi/treino   10znGJy_a1lvRtlcUDpIXIVlJd7HesAZo
+06 dataset      1G27O3MHeLcGRwv1Flob7i9bNUg8XmR-Z
 ```
 
-> **Se você editar um notebook no Colab e salvar**, o id não muda — o link
-> continua valendo. Mas o arquivo do Drive passa a divergir da pasta
-> `colabs/` deste projeto. A fonte de verdade aqui é `tools/gerar_colabs.py`.
+Abra com `https://colab.research.google.com/drive/<id>`, ou troque os botões
+de volta num comando:
+
+```bash
+python tools/configurar_demos.py --drive 01=1Q-4322NzLuvuiOaUr8Ka9vTi38d7mmPE,02=...
+python tools/rebuild_inline_data.py 06
+```
+
+Para conferir para onde os botões apontam agora:
+`python tools/configurar_demos.py --listar`
 
 | notebook | o que mostra no palco | precisa de treino? |
 |---|---|---|
