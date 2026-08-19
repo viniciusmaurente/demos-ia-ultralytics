@@ -10,12 +10,12 @@ na frente da plateia**. Rodam no Google Colab, com GPU gratuita.
 
 | demo | o que mostra | abrir |
 |---|---|---|
-| **00 · Preparar o Drive** | cria as pastas e baixa os modelos (rodar uma vez) | [▶](https://colab.research.google.com/github/viniciusmaurente/-demos-ia-ultralytics/blob/main/colabs/00-SETUP-DRIVE.ipynb) |
-| **01 · A máquina que vê** | detecção, contagem e o que significa "confiança" | [▶](https://colab.research.google.com/github/viniciusmaurente/-demos-ia-ultralytics/blob/main/colabs/01-deteccao-contagem.ipynb) |
-| **02 · Caixa ou contorno** | detecção × segmentação, e medir área ocupada | [▶](https://colab.research.google.com/github/viniciusmaurente/-demos-ia-ultralytics/blob/main/colabs/02-segmentacao.ipynb) |
-| **03 · Postura ao vivo** | esqueleto, braços levantados, contagem de movimento | [▶](https://colab.research.google.com/github/viniciusmaurente/-demos-ia-ultralytics/blob/main/colabs/03-pose-bracos.ipynb) |
-| **04 · Contando estoque** | modelo pronto **+** especialista treinado por você | [▶](https://colab.research.google.com/github/viniciusmaurente/-demos-ia-ultralytics/blob/main/colabs/04-estoque-garrafas.ipynb) |
-| **05 · Ensinando ao vivo** | o treino acontecendo, época por época | [▶](https://colab.research.google.com/github/viniciusmaurente/-demos-ia-ultralytics/blob/main/colabs/05-epi-treino-ao-vivo.ipynb) |
+| **00 · Preparar o Drive** | cria as pastas e baixa os modelos (rodar uma vez) | [▶](https://colab.research.google.com/github/viniciusmaurente/demos-ia-ultralytics/blob/main/colabs/00-SETUP-DRIVE.ipynb) |
+| **01 · A máquina que vê** | detecção, contagem e o que significa "confiança" | [▶](https://colab.research.google.com/github/viniciusmaurente/demos-ia-ultralytics/blob/main/colabs/01-deteccao-contagem.ipynb) |
+| **02 · Caixa ou contorno** | detecção × segmentação, e medir área ocupada | [▶](https://colab.research.google.com/github/viniciusmaurente/demos-ia-ultralytics/blob/main/colabs/02-segmentacao.ipynb) |
+| **03 · Postura ao vivo** | esqueleto, braços levantados, contagem de movimento | [▶](https://colab.research.google.com/github/viniciusmaurente/demos-ia-ultralytics/blob/main/colabs/03-pose-bracos.ipynb) |
+| **04 · Contando estoque** | modelo pronto **+** especialista treinado por você | [▶](https://colab.research.google.com/github/viniciusmaurente/demos-ia-ultralytics/blob/main/colabs/04-estoque-garrafas.ipynb) |
+| **05 · Ensinando ao vivo** | o treino acontecendo, época por época | [▶](https://colab.research.google.com/github/viniciusmaurente/demos-ia-ultralytics/blob/main/colabs/05-epi-treino-ao-vivo.ipynb) |
 
 ## Como usar
 
