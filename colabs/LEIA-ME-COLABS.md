@@ -3,6 +3,34 @@
 Cinco notebooks para as demonstrações da palestra 06, mais um de preparação.
 Todos gerados por `tools/gerar_colabs.py` (edite o gerador, não o `.ipynb`).
 
+## Links ativos (Google Drive do Vinicius)
+
+Configurados em `EVENTO.demos` e testados: cada botão do deck abre o notebook
+certo. Verificados por hash contra os arquivos locais — não foi confiado na
+ordem em que os links chegaram.
+
+| # | notebook | abrir no Colab |
+|---|---|---|
+| 00 | preparar o Drive | [1B4xms07lo…](https://colab.research.google.com/drive/1B4xms07lo1zz4IMVcupxnm2xYN0B7Vfo) |
+| 01 | detecção e contagem | [1ffuOstUK6…](https://colab.research.google.com/drive/1ffuOstUK6iaRQZN5QQ1wpZJhtxcw14JE) |
+| 02 | segmentação | [1h6FddvfGk…](https://colab.research.google.com/drive/1h6FddvfGkeV40wg9i-tg82V4gMwuHjeP) |
+| 03 | pose e braços | [1kSzJauV0w…](https://colab.research.google.com/drive/1kSzJauV0w8S_F2iMR0lqWmED3fmItQu8) |
+| 04 | estoque / garrafas | [18CDnYTd1k…](https://colab.research.google.com/drive/18CDnYTd1khJV7V9RpZpkW44xF3lEFFLs) |
+| 05 | treino ao vivo (EPI) | [1x7jz7fXES…](https://colab.research.google.com/drive/1x7jz7fXESTPz52HR4GTh5mGd-9lRi-R_) |
+
+Para trocar qualquer um depois (ou apontar para o GitHub):
+
+```bash
+python tools/configurar_demos.py --listar
+python tools/configurar_demos.py --drive 01=<id>,03=<id>
+python tools/configurar_demos.py --github usuario/repositorio
+python tools/rebuild_inline_data.py 06     # SEMPRE depois
+```
+
+> **Se você editar um notebook no Colab e salvar**, o id não muda — o link
+> continua valendo. Mas o arquivo do Drive passa a divergir da pasta
+> `colabs/` deste projeto. A fonte de verdade aqui é `tools/gerar_colabs.py`.
+
 | notebook | o que mostra no palco | precisa de treino? |
 |---|---|---|
 | `00-SETUP-DRIVE.ipynb` | **rodar em casa**, cria as pastas e baixa os modelos | — |
