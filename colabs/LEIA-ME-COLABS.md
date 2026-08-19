@@ -3,7 +3,7 @@
 Cinco notebooks para as demonstrações da palestra 06, mais um de preparação.
 Todos gerados por `tools/gerar_colabs.py` (edite o gerador, não o `.ipynb`).
 
-## Links ativos (Google Drive do Vinicius)
+## Links ativos (Google Drive do Vinicius) — atualizados em 19/08
 
 Configurados em `EVENTO.demos` e testados: cada botão do deck abre o notebook
 certo. Verificados por hash contra os arquivos locais — não foi confiado na
@@ -11,12 +11,13 @@ ordem em que os links chegaram.
 
 | # | notebook | abrir no Colab |
 |---|---|---|
-| 00 | preparar o Drive | [1B4xms07lo…](https://colab.research.google.com/drive/1B4xms07lo1zz4IMVcupxnm2xYN0B7Vfo) |
-| 01 | detecção e contagem | [1ffuOstUK6…](https://colab.research.google.com/drive/1ffuOstUK6iaRQZN5QQ1wpZJhtxcw14JE) |
-| 02 | segmentação | [1h6FddvfGk…](https://colab.research.google.com/drive/1h6FddvfGkeV40wg9i-tg82V4gMwuHjeP) |
-| 03 | pose e braços | [1kSzJauV0w…](https://colab.research.google.com/drive/1kSzJauV0w8S_F2iMR0lqWmED3fmItQu8) |
-| 04 | estoque / garrafas | [18CDnYTd1k…](https://colab.research.google.com/drive/18CDnYTd1khJV7V9RpZpkW44xF3lEFFLs) |
-| 05 | treino ao vivo (EPI) | [1x7jz7fXES…](https://colab.research.google.com/drive/1x7jz7fXESTPz52HR4GTh5mGd-9lRi-R_) |
+| 00 | preparar o Drive | [1ZKQPTVIqj…](https://colab.research.google.com/drive/1ZKQPTVIqjknKrdVrUlu3n52P232tc6Zg) |
+| 01 | detecção e contagem | [1whU_HIBtP…](https://colab.research.google.com/drive/1whU_HIBtPY6qYg9qbkJ4IfHqXrBT1831) |
+| 02 | segmentação + instâncias ao vivo | [1gcQBDYdHG…](https://colab.research.google.com/drive/1gcQBDYdHG3ThnIznQjtFReQz6dYSACwc) |
+| 03 | pose + polichinelo ao vivo | [1P3rOJCEGu…](https://colab.research.google.com/drive/1P3rOJCEGuQUS3PlP53ElCesgtwfPRpF7) |
+| 04 | estoque + contador ao vivo | [1C149jsJMd…](https://colab.research.google.com/drive/1C149jsJMd7-B3OMIMPBf2PAmEvAb_aWn) |
+| 05 | treino ao vivo (EPI) | [1csstfsrOd…](https://colab.research.google.com/drive/1csstfsrOd4FE18AhoyLW3xui3NoPd52-) |
+| 06 | dataset → sistema rodando | [1aiCw15xWe…](https://colab.research.google.com/drive/1aiCw15xWeDM7giyKxagJ6TdSXH0Fnj06) |
 
 Para trocar qualquer um depois (ou apontar para o GitHub):
 
