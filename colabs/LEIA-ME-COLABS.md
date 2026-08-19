@@ -105,11 +105,17 @@ está o efeito, e não pede anotação nenhuma de você.
 
 ## Cuidados de palco
 
-**Webcam no Colab é frame a frame.** O Colab roda num servidor remoto; a imagem
-sobe do seu navegador quadro a quadro. Para a plateia, vídeo a 3 FPS lê como
-"travou". A célula de webcam do `03` tira **uma foto** e analisa — o efeito de
-ver a própria sala medida é imediato e não depende de fluidez. Vídeo fluido, só
-rodando fora do Colab.
+**Webcam ao vivo: funciona, e é fluida.** O `02`, o `03`, o `04` e o `06` têm
+blocos de tempo real. O vídeo **não sai do navegador** — ele toca nativo, e só
+um overlay PNG transparente (máscaras, caixas, contadores) volta do servidor.
+Por isso parece fluido mesmo quando o processamento roda a 8–12 quadros por
+segundo.
+
+Cada bloco ao vivo tem um **botão verde de encerrar**. Use-o em vez de
+interromper a célula: assim a câmera é liberada direito.
+
+Se a câmera não abrir no computador do evento, o `03` também tem a célula de
+**foto única** como plano B — menos impressionante, mas nunca falha.
 
 **GPU no Colab grátis não é garantida.** Com 20–30 épocas e imagens pequenas o
 treino roda em CPU também, só mais devagar. Rode a célula de checagem antes de
